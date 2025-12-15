@@ -1,0 +1,12 @@
+<launch>
+
+    <!-- Empezar el nodo motor -->
+    <node name="Motor_nodo" pkg="motor_pkg" type="Motor.py" output="screen" />
+
+    <!-- Empezar el nodo ultrasonido -->
+    <node name="Ultrasonido_nodo" pkg="ultrasonido_pkg" type="Ultrasonido.py" output="screen" />
+
+    <!-- Empezar el nodo remoto -->
+    <node name="Remoto_nodo" pkg="remoto_pkg" type="Remoto.py" output="screen" />
+
+</launch>

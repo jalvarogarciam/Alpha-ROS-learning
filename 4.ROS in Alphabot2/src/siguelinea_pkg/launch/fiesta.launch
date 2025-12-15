@@ -1,0 +1,14 @@
+<launch>
+    <!-- 1. El Piloto (Motores + Sensores IR + Obstáculos) -->
+    <node pkg="siguelinea_pkg" name="piloto" type="siguelinea_pid.py" output="screen">
+    </node>
+
+    <!-- 2. El DJ (Suena Star Wars si recibe alerta) -->
+    <node pkg="buzzer_pkg" name="alarma" type="alerta_starwars.py" output="screen">
+    </node>
+
+    <!-- 3. Los Ojos (Abre la ventana de la cámara) -->
+    <!-- Asegúrate de que Camara.py tiene la 'C' mayúscula si tu archivo es así -->
+    <node pkg="camara_pkg" name="ojo_robot" type="Camara.py" output="screen">
+    </node>
+</launch>
