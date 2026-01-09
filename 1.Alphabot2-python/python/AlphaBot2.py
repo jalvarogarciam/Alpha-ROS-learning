@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding:utf-8 -*-
 import RPi.GPIO as GPIO  # Librería para controlar los pines físicos de la Raspberry Pi
 import time              # Librería para gestionar pausas y tiempos
 
